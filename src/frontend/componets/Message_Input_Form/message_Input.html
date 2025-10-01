@@ -1,0 +1,20 @@
+<form id="message-input-form">
+    <div class="form-group">
+        <label for="message-type">Message Type:</label>
+        <select id="message-type" required>
+            <option value="">Select type...</option>
+            <option value="traffic">Traffic</option>
+            <option value="weather">Weather</option>
+            <option value="maintenance">Maintenance</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="recipient">Recipient:</label>
+        <input type="text" id="recipient" required>
+    </div>
+    <div class="form-group">
+        <label for="message-content">Message Content:</label>
+        <textarea id="message-content" rows="4" required></textarea>
+    </div>
+    <button type="submit">Submit</button>
+</form>
