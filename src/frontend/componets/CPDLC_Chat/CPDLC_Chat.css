@@ -1,36 +1,33 @@
-#chat-container {
-    max-width: 600px;
-    margin: 0 auto;
+.cpdlc-messages-container {
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
 }
 
-#chat-messages {
-    height: 400px;
-    overflow-y: auto;
-    border: 1px solid #ccc;
-    padding: 10px;
+.message-list {
+    list-style: none;
+    padding: 0;
 }
 
-.message {
+.message-item {
     margin-bottom: 10px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
 }
 
-#message-form {
-    margin-top: 20px;
+.controller-message {
+    background-color: #e3f2fd;
+    color: #2c3e50;
 }
 
-#message-input {
-    width: calc(100% - 80px);
-    padding: 5px;
+.pilot-message {
+    background-color: #d4e1ef;
+    color: #2c3e50;
 }
 
-button[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 5px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.timestamp {
+    font-size: 0.8em;
+    color: #666;
 }
