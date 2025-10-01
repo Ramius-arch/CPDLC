@@ -1,0 +1,19 @@
+<div id="settings-panel">
+    <div class="setting-item">
+        <label for="volume">Volume:</label>
+        <input type="range" min="0" max="100" value="75" id="volume">
+    </div>
+    <div class="setting-item">
+        <label for="notifications">Enable Notifications:</label>
+        <input type="checkbox" id="notifications" checked>
+    </div>
+    <div class="setting-item">
+        <label for="theme">Theme:</label>
+        <select id="theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+            <option value="sepia">Sepia</option>
+        </select>
+    </div>
+    <button type="button" onclick="saveSettings()">Save Settings</button>
+</div>
