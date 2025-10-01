@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPDLC Frontend</title>
+    
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="cpdlc-messages.css">
+    <link rel="stylesheet" href="message-input.css">
+    <link rel="stylesheet" href="message-history.css">
+    <link rel="stylesheet" href="settings-panel.css">
+    
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="cpdlc.js"></script>
+</head>
+
+<body>
+    <div class="cpdlc-container">
+        <!-- Header -->
+        <header class="cpdlc-header">
+            <h1>Controller-Pilot Data Link Communication (CPDLC)</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" id="messages">Messages</a></li>
+                    <li><a href="#" id="history">History</a></li>
+                    <li><a href="#" id="settings">Settings</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="cpdlc-main">
+            <!-- Messages Display -->
+            <div class="messages-display" id="messages-container">
+                <h2>Current Messages</h2>
+                <ul class="message-list"></ul>
+            </div>
+
+            <!-- Message Input Form -->
+            <div class="message-input" id="input-form">
+                <h2>New Message</h2>
+                <form id="message-form">
+                    <div class="form-group">
+                        <label for="message-type">Message Type:</label>
+                        <select id="message-type">
+                            <option value="airworthiness">Airworthiness</option>
+                            <option value="operational">Operational</option>
+                            <option value="weather">Weather</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text">Message Text:</label>
+                        <textarea id="message-text" rows="4"></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Message History -->
+            <div class="message-history" id="history-container">
+                <h2>Message History</h2>
+                <ul class="history-list"></ul>
+            </div>
+
+            <!-- Settings Panel -->
+            <div class="settings-panel" id="settings-container">
+                <h2>Settings</h2>
+                <form id="settings-form">
+                    <div class="setting-item">
+                        <label for="volume">Volume:</label>
+                        <input type="range" min="0" max="100" value="75" id="volume">
+                    </div>
+                    <div class="setting-item">
+                        <label for="notifications"><input type="checkbox" id="notifications" checked> Enable Notifications</label>
+                    </div>
+                    <div class="setting-item">
+                        <label for="theme">Theme:</label>
+                        <select id="theme">
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                            <option value="sepia">Sepia</option>
+                        </select>
+                    </div>
+                    <button type="button" onclick="saveSettings()">Save Settings</button>
+                </form>
+            </div>
+        </main>
+
+        <!-- Scripts -->
+        <script src="settings.js"></script>
+    </div>
+</body>
+</html>
