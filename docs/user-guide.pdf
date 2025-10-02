@@ -1,0 +1,64 @@
+%PDF-1.4
+%
+% THIS IS A PDF FILE. TO EDIT, CONVERT TO TXT OR EDITABLE FORMAT.
+%
+
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\title{User Guide}
+\author{}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This guide provides instructions for setting up and using the application. It is intended for developers and end-users who want to interact with the API or use the application's features.
+
+\section{Installation}
+1. Clone the repository:
+   \begin{itemize}
+     \item Git clone command: \texttt{git clone https://github.com/your-repository.git}
+   \end{itemize}
+
+2. Install dependencies:
+   \begin{itemize}
+     \item Run \texttt{npm install} in the project directory.
+   \end{itemize}
+
+\section{Configuration}
+1. Create a `.env` file based on the provided `.env.example`.
+2. Update the environment variables as needed.
+
+\section{Getting Started}
+1. Start the application:
+   \begin{itemize}
+     \item Run \texttt{npm start} to start the server.
+   \end{itemize}
+
+\section{API Endpoints}
+For detailed API documentation, refer to the `api-docs.md` file or visit:
+\url{http://localhost:3000/api-docs}
+
+\section{Features}
+- User authentication
+- Post creation and management
+- API key-based access control
+
+\section{Troubleshooting}
+1. Common Issues:
+   \begin{itemize}
+     \item Ensure all environment variables are correctly set.
+     \item Check network connectivity to external services.
+   \end{itemize}
+
+2. Logs:
+   - Application logs are stored in the `logs` directory.
+
+\section{Contact Us}
+For questions or support, email us at support@yourdomain.com.
+
+\end{document}
