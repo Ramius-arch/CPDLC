@@ -1,0 +1,30 @@
+# Use Python 3.7 as the base image
+FROM python:3.7
+
+# Set the working directory to /app
+WORKDIR /app
+
+# Copy requirements.txt first to ensure all dependencies are met
+COPY requirements.txt .
+
+# Install all required Python packages
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy all other files into the working directory
+COPY . .
+
+# Initialize the database and create tables if they don't exist
+RUN python -c 'from database import Database; Database.init()'
+
+# Create a non-root user for better security practices
+RUN useradd -m appuser && chown -R appuser:appuser /app
+
+# Set environment variables needed by the application
+ENV SECRET_KEY='your-secret-key-here'
+ENV DB_URL='sqlite:///cpdlc.db'
+
+# Expose the port that the Flask server will listen on
+EXPOSE 5000
+
+# Use Gunicorn as the production server
+CMD ["gunicorn", "--bind", "0.0.0.0:5000", "--workers", "3", "app:app"]
