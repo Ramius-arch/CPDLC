@@ -7,7 +7,7 @@ Simple Controller Pilot Data Link Communication system.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/cpdlc-system.git
+   git clone https://github.com/Ramius-arch/cpdlc-system.git
    cd cpdlc-system
    ```
 2. Install dependencies:
