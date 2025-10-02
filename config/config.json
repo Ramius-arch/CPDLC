@@ -1,0 +1,33 @@
+{
+    "general": {
+        "debugMode": false,
+        "logging": {
+            "enabled": true,
+            "level": "info",
+            "file": "app.log"
+        }
+    },
+    "database": {
+    "uri": "mongodb://localhost:27017",
+        "options": {
+            "useNewUrlParser": true,
+            "useUnifiedTopology": true
+        }
+    },
+    "api": {
+        "version": "1.0.0",
+        "baseURL": "/api/v1",
+        "prefix": "api"
+    },
+    "auth": {
+        "jwt": {
+            "secret": "default_jwt_secret",
+            "expiresIn": "7d"
+        }
+    },
+    "cache": {
+        "enabled": true,
+        "type": "memory",
+        "ttl": 3600
+    }
+}
