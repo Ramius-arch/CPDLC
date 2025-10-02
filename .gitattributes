@@ -1,2 +1,21 @@
+
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Ensure consistent line endings for source code
+*.js   text eol=lf
+*.py   text eol=lf
+*.css  text eol=lf
+*.html text eol=lf
+*.json text eol=lf
+
+# Treat shell scripts as text and normalize line endings
+*.sh   text eol=lf
+
+# Mark images and binaries as binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
