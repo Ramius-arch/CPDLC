@@ -1,0 +1,24 @@
+# Use official Nginx image as base
+FROM nginx:alpine
+
+# Set working directory
+WORKDIR /usr/share/nginx/html
+
+# Copy custom configuration files
+COPY nginx.conf /etc/nginx/conf.d/
+
+# Copy frontend assets
+COPY dist/* /usr/share/nginx/html/
+
+# Expose port 80
+EXPOSE 80
+
+# Run Nginx as non-root user
+RUN adduser -D nginx_user && \
+    chown -R nginx_user:nginx_user /var/log/nginx /etc/nginx/conf.d /usr/share/nginx/html
+
+# Set environment variables if needed (e.g., NODE_ENV)
+ENV NODE_ENV=production
+
+# Command to run Nginx
+CMD ["nginx", "-g", "daemon off"]
