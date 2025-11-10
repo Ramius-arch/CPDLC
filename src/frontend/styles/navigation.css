@@ -1,0 +1,53 @@
+/* Main content sections */
+main section {
+    display: none;
+    padding: 20px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+main section.active-section {
+    display: block;
+    opacity: 1;
+}
+
+/* Navigation styles */
+nav {
+    background-color: var(--header-bg);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+    background-color: var(--message-hover);
+}
+
+nav ul li a.active {
+    color: var(--primary-color);
+    background-color: var(--message-bg);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Make sure messages section is visible by default */
+#messages-section.active-section {
+    display: block;
+}

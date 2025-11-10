@@ -1,0 +1,57 @@
+.history {
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: calc(100vh - 40px);
+    overflow-y: auto;
+}
+
+.history h2 {
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.history-item {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+}
+
+.history-item .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+.history-item .content {
+    margin-bottom: 5px;
+}
+
+.history-item .footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: var(--text-color);
+    opacity: 0.6;
+}
+
+.history-item.sent {
+    margin-left: 20%;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.history-item.received {
+    margin-right: 20%;
+}

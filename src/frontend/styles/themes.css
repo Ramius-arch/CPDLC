@@ -1,0 +1,58 @@
+body {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --header-bg: #f0f0f0;
+    --border-color: #ddd;
+    
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+body.dark-theme {
+    --bg-color: #1a1a1a;
+    --text-color: #ffffff;
+    --header-bg: #2d2d2d;
+    --border-color: #444;
+}
+
+body.sepia-theme {
+    --bg-color: #f4ecd8;
+    --text-color: #5b4636;
+    --header-bg: #e4d5b7;
+    --border-color: #bca483;
+}
+
+.cpdlc-header {
+    background-color: var(--header-bg);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.message-list li, .history-list li {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+}
+
+.message-input form {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+}
+
+input, select, textarea {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

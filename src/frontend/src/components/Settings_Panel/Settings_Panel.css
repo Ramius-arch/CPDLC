@@ -1,0 +1,71 @@
+.settings {
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.settings h2 {
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.settings-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.settings-group {
+    margin-bottom: 15px;
+}
+
+.settings-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.settings-group select,
+.settings-group button {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    background-color: var(--surface-color);
+    color: var(--text-color);
+}
+
+.theme-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.theme-button {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.theme-button:hover {
+    opacity: 0.8;
+}
+
+.theme-button.light {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.theme-button.dark {
+    background-color: #242526;
+    color: #ffffff;
+}
+
+.theme-button.sepia {
+    background-color: #f1e7d0;
+    color: #433422;
+}

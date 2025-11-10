@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPDLC Registration</title>
+    <link rel="stylesheet" href="styles/register.css">
+</head>
+<body>
+    <div class="register-container">
+        <h1>CPDLC Registration</h1>
+        <div class="error-message" id="error-message"></div>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+        </div>
+        <div class="form-group">
+            <label for="role">Role</label>
+            <select id="role">
+                <option value="pilot">Pilot</option>
+                <option value="atc">Air Traffic Controller</option>
+            </select>
+        </div>
+        <button id="register-btn">Register</button>
+        <div class="login-link">
+            Already have an account? <a href="login.html" id="login-link">Login here</a>
+        </div>
+    </div>
+    <script src="register.bundle.js"></script>
+</body>
+</html>

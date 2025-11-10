@@ -1,0 +1,118 @@
+.message-history-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#message-history {
+    max-height: 500px;
+    overflow-y: auto;
+    padding: 15px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) var(--bg-color);
+}
+
+#message-history::-webkit-scrollbar {
+    width: 8px;
+}
+
+#message-history::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+#message-history::-webkit-scrollbar-thumb {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+}
+
+.history-item {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: var(--bg-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.history-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.9em;
+    color: var(--text-color-secondary);
+}
+
+.message-type {
+    font-weight: bold;
+    color: var(--accent-color);
+    padding: 4px 8px;
+    border-radius: 4px;
+    background-color: rgba(33, 150, 243, 0.1);
+}
+
+.message-content {
+    margin: 10px 0;
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: var(--text-color);
+    white-space: pre-wrap;
+}
+
+.message-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.8em;
+    color: var(--text-color-secondary);
+}
+
+.history-item.empty {
+    text-align: center;
+    color: var(--text-color-secondary);
+    font-style: italic;
+    padding: 20px;
+}
+
+/* Message type colors */
+.history-item.weather {
+    border-left: 4px solid #4CAF50;
+}
+
+.history-item.clearance {
+    border-left: 4px solid #2196F3;
+}
+
+.history-item.emergency {
+    border-left: 4px solid #f44336;
+    animation: pulse 2s infinite;
+}
+
+.error {
+    color: #f44336;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(244, 67, 54, 0.1);
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(244, 67, 54, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(244, 67, 54, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(244, 67, 54, 0); }
+}
