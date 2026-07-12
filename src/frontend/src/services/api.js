@@ -59,7 +59,7 @@ export const messageService = {
             body: JSON.stringify({ recipient, content, msg_code: msgCode, ref_seq_num: refSeqNum })
         });
         const data = await response.json();
-        if (response.status === 401) {
+        if (response.status === 401 || response.status === 404) {
             authService.logout();
             window.location.href = 'login.html';
             throw new Error('Session expired');
@@ -75,7 +75,7 @@ export const messageService = {
                 'Authorization': `Bearer ${token}`
             }
         });
-        if (response.status === 401) {
+        if (response.status === 401 || response.status === 404) {
             authService.logout();
             window.location.href = 'login.html';
             return [];
@@ -92,7 +92,7 @@ export const messageService = {
                 'Authorization': `Bearer ${token}`
             }
         });
-        if (response.status === 401) {
+        if (response.status === 401 || response.status === 404) {
             authService.logout();
             window.location.href = 'login.html';
             return [];

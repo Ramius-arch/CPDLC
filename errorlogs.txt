@@ -3,301 +3,79 @@ Refused to apply style from '<URL>' because its MIME type ('text/html') is not a
 Refused to apply style from '<URL>' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
 Refused to apply style from '<URL>' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
 Refused to apply style from '<URL>' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
- [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled.
- [HMR] Waiting for update signal from WDS...
- [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled.
- [HMR] Waiting for update signal from WDS...
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load chat messages: 
-:3000/api/messages/users:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to fetch users: 
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load chat messages: 
-:3000/api/messages/users:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to fetch users: 
- Failed to load message history: 
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load message history: 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load chat messages: 
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load message history: 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load chat messages: 
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load message history: 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load chat messages: 
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load message history: 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load chat messages: 
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load message history: 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load chat messages: 
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load message history: 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- 
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load chat messages: 
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load message history: 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load chat messages: 
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load message history: 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- 
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load chat messages: 
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load message history: 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load chat messages: 
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- Failed to load message history: 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
- 
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
- Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-CPDLC_Chat.js:60 Failed to load chat messages: Error
-    at eval (api.js:178:19)
+index.js:485 [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled.
+log.js:39 [HMR] Waiting for update signal from WDS...
+index.js:485 [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled.
+log.js:39 [HMR] Waiting for update signal from WDS...
+api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
+api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
+api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
+api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
+api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
+api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
+api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
+api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
+:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+CPDLC_Chat.js:60 Failed to load chat messages: Error: User not found
+    at eval (api.js:194:19)
     at Generator.eval (api.js:6:1660)
     at Generator.eval [as next] (api.js:7:255)
     at asyncGeneratorStep (api.js:8:70)
     at _next (api.js:9:163)
 eval @ CPDLC_Chat.js:60
-eval @ CPDLC_Chat.js:6
-eval @ CPDLC_Chat.js:7
-asyncGeneratorStep @ CPDLC_Chat.js:8
-_throw @ CPDLC_Chat.js:9
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-message_History.js:59 Failed to load message history: Error
-    at eval (api.js:178:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ message_History.js:59
-eval @ message_History.js:6
-eval @ message_History.js:7
-asyncGeneratorStep @ message_History.js:8
-_throw @ message_History.js:9
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-CPDLC_Chat.js:60 Failed to load chat messages: Error
-    at eval (api.js:178:19)
+:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+CPDLC_Chat.js:60 Failed to load chat messages: Error: User not found
+    at eval (api.js:194:19)
     at Generator.eval (api.js:6:1660)
     at Generator.eval [as next] (api.js:7:255)
     at asyncGeneratorStep (api.js:8:70)
     at _next (api.js:9:163)
 eval @ CPDLC_Chat.js:60
-eval @ CPDLC_Chat.js:6
-eval @ CPDLC_Chat.js:7
-asyncGeneratorStep @ CPDLC_Chat.js:8
-_throw @ CPDLC_Chat.js:9
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-message_History.js:59 Failed to load message history: Error
-    at eval (api.js:178:19)
+:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+message_History.js:59 Failed to load message history: Error: User not found
+    at eval (api.js:194:19)
     at Generator.eval (api.js:6:1660)
     at Generator.eval [as next] (api.js:7:255)
     at asyncGeneratorStep (api.js:8:70)
     at _next (api.js:9:163)
 eval @ message_History.js:59
-eval @ message_History.js:6
-eval @ message_History.js:7
-asyncGeneratorStep @ message_History.js:8
-_throw @ message_History.js:9
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-CPDLC_Chat.js:60 Failed to load chat messages: Error
-    at eval (api.js:178:19)
+:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+message_History.js:59 Failed to load message history: Error: User not found
+    at eval (api.js:194:19)
+    at Generator.eval (api.js:6:1660)
+    at Generator.eval [as next] (api.js:7:255)
+    at asyncGeneratorStep (api.js:8:70)
+    at _next (api.js:9:163)
+eval @ message_History.js:59
+api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
+api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
+:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+CPDLC_Chat.js:60 Failed to load chat messages: Error: User not found
+    at eval (api.js:194:19)
     at Generator.eval (api.js:6:1660)
     at Generator.eval [as next] (api.js:7:255)
     at asyncGeneratorStep (api.js:8:70)
     at _next (api.js:9:163)
 eval @ CPDLC_Chat.js:60
-eval @ CPDLC_Chat.js:6
-eval @ CPDLC_Chat.js:7
-asyncGeneratorStep @ CPDLC_Chat.js:8
-_throw @ CPDLC_Chat.js:9
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-message_History.js:59 Failed to load message history: Error
-    at eval (api.js:178:19)
+:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
+message_History.js:59 Failed to load message history: Error: User not found
+    at eval (api.js:194:19)
     at Generator.eval (api.js:6:1660)
     at Generator.eval [as next] (api.js:7:255)
     at asyncGeneratorStep (api.js:8:70)
     at _next (api.js:9:163)
 eval @ message_History.js:59
-eval @ message_History.js:6
-eval @ message_History.js:7
-asyncGeneratorStep @ message_History.js:8
-_throw @ message_History.js:9
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-CPDLC_Chat.js:60 Failed to load chat messages: Error
-    at eval (api.js:178:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ CPDLC_Chat.js:60
-eval @ CPDLC_Chat.js:6
-eval @ CPDLC_Chat.js:7
-asyncGeneratorStep @ CPDLC_Chat.js:8
-_throw @ CPDLC_Chat.js:9
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-message_History.js:59 Failed to load message history: Error
-    at eval (api.js:178:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ message_History.js:59
-eval @ message_History.js:6
-eval @ message_History.js:7
-asyncGeneratorStep @ message_History.js:8
-_throw @ message_History.js:9
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-CPDLC_Chat.js:60 Failed to load chat messages: Error
-    at eval (api.js:178:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ CPDLC_Chat.js:60
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-message_History.js:59 Failed to load message history: Error
-    at eval (api.js:178:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ message_History.js:59
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-CPDLC_Chat.js:60 Failed to load chat messages: Error
-    at eval (api.js:178:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ CPDLC_Chat.js:60
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-message_History.js:59 Failed to load message history: Error
-    at eval (api.js:178:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ message_History.js:59
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-CPDLC_Chat.js:60 Failed to load chat messages: Error
-    at eval (api.js:178:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ CPDLC_Chat.js:60
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-message_History.js:59 Failed to load message history: Error
-    at eval (api.js:178:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ message_History.js:59
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-CPDLC_Chat.js:60 Failed to load chat messages: Error
-    at eval (api.js:178:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ CPDLC_Chat.js:60
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 401 (UNAUTHORIZED)
-message_History.js:59 Failed to load message history: Error
-    at eval (api.js:178:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ message_History.js:59
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
-api.js:163  GET http://localhost:3000/api/messages/history 401 (UNAUTHORIZED)
-eval @ api.js:163
+api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
+api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
+api.js:171  GET http://localhost:3000/api/messages/history 404 (NOT FOUND)
+eval @ api.js:171
 eval @ api.js:6
 eval @ api.js:7
 asyncGeneratorStep @ api.js:8
 _next @ api.js:9
 eval @ api.js:9
 eval @ api.js:9
-getHistory @ api.js:183
+getHistory @ api.js:199
 eval @ CPDLC_Chat.js:40
 eval @ CPDLC_Chat.js:6
 eval @ CPDLC_Chat.js:7
@@ -306,8 +84,8 @@ _next @ CPDLC_Chat.js:9
 eval @ CPDLC_Chat.js:9
 eval @ CPDLC_Chat.js:9
 loadChatMessages @ CPDLC_Chat.js:23
-CPDLC_Chat.js:60 Failed to load chat messages: Error
-    at eval (api.js:178:19)
+CPDLC_Chat.js:60 Failed to load chat messages: Error: User not found
+    at eval (api.js:194:19)
     at Generator.eval (api.js:6:1660)
     at Generator.eval [as next] (api.js:7:255)
     at asyncGeneratorStep (api.js:8:70)
@@ -323,15 +101,15 @@ _next @ CPDLC_Chat.js:9
 eval @ CPDLC_Chat.js:9
 eval @ CPDLC_Chat.js:9
 loadChatMessages @ CPDLC_Chat.js:23
-api.js:163  GET http://localhost:3000/api/messages/history 401 (UNAUTHORIZED)
-eval @ api.js:163
+api.js:171  GET http://localhost:3000/api/messages/history 404 (NOT FOUND)
+eval @ api.js:171
 eval @ api.js:6
 eval @ api.js:7
 asyncGeneratorStep @ api.js:8
 _next @ api.js:9
 eval @ api.js:9
 eval @ api.js:9
-getHistory @ api.js:183
+getHistory @ api.js:199
 eval @ message_History.js:37
 eval @ message_History.js:6
 eval @ message_History.js:7
@@ -340,8 +118,8 @@ _next @ message_History.js:9
 eval @ message_History.js:9
 eval @ message_History.js:9
 loadMessageHistory @ message_History.js:20
-message_History.js:59 Failed to load message history: Error
-    at eval (api.js:178:19)
+message_History.js:59 Failed to load message history: Error: User not found
+    at eval (api.js:194:19)
     at Generator.eval (api.js:6:1660)
     at Generator.eval [as next] (api.js:7:255)
     at asyncGeneratorStep (api.js:8:70)
