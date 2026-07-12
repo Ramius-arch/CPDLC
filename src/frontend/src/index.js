@@ -1,9 +1,9 @@
 import '../styles/main.css';
-import { initializeAirspace } from '../components/Airspace_Display/Airspace';
-import { initializeChat } from '../components/CPDLC_Chat/CPDLC_Chat';
-import { initializeHistory } from '../components/Message_History/message_History';
-import { initializeMessageInput } from '../components/Message_Input_Form/message_Input';
-import { initializeSettings } from '../components/Settings_Panel/Settings_Panel';
+import { initializeAirspace } from './components/Airspace_Display/Airspace';
+import { initializeChat } from './components/CPDLC_Chat/CPDLC_Chat';
+import { initializeHistory } from './components/Message_History/message_History';
+import { initializeMessageInput } from './components/Message_Input_Form/message_Input';
+import { initializeSettings } from './components/Settings_Panel/Settings_Panel';
 import { settingsService } from './services/settings';
 import { authService } from './services/api';
 

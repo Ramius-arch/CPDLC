@@ -21,9 +21,9 @@ def init_db():
     # Create indexes
     db.users.create_index([('username', ASCENDING)], unique=True)
     db.users.create_index([('email', ASCENDING)], unique=True)
-    db.messages.create_index([('created_at', ASCENDING)])
+    db.messages.create_index([('timestamp', ASCENDING)])
     db.messages.create_index([('sender_id', ASCENDING)])
-    db.messages.create_index([('receiver_id', ASCENDING)])
+    db.messages.create_index([('recipient', ASCENDING)])
     
     # Create default users if they don't exist
     default_users = [
@@ -31,13 +31,15 @@ def init_db():
             'username': 'pilot1',
             'email': 'pilot1@example.com',
             'password': 'pilot123',
-            'role': 'pilot'
+            'role': 'pilot',
+            'mode_s_address': 'C0A1F2'
         },
         {
             'username': 'atc1',
             'email': 'atc1@example.com',
             'password': 'atc123',
-            'role': 'atc'
+            'role': 'controller',
+            'facility_designator': 'EGTT'
         }
     ]
     
@@ -47,4 +49,7 @@ def init_db():
             del user['password']
             db.users.insert_one(user)
     
-    print("Database initialized successfully")
+    print("Database initialized successfully with compliant ICAO accounts.")
+
+if __name__ == '__main__':
+    init_db()

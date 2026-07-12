@@ -2,13 +2,15 @@ from datetime import datetime
 from bson import ObjectId
 
 class Message:
-    def __init__(self, sender_id, receiver_id, content, message_type='clearance', status='sent'):
+    def __init__(self, sender_id, recipient, content, msg_code='UM169', seq_num=0, ref_seq_num=None, status='sent'):
         self.sender_id = sender_id
-        self.receiver_id = receiver_id
+        self.recipient = recipient
         self.content = content
-        self.message_type = message_type
+        self.msg_code = msg_code
+        self.seq_num = seq_num
+        self.ref_seq_num = ref_seq_num
         self.status = status
-        self.created_at = datetime.utcnow()
+        self.timestamp = datetime.utcnow()
     
     @staticmethod
     def from_db_object(db_object):
@@ -16,18 +18,22 @@ class Message:
             return None
         return Message(
             sender_id=db_object['sender_id'],
-            receiver_id=db_object['receiver_id'],
+            recipient=db_object['recipient'],
             content=db_object['content'],
-            message_type=db_object.get('message_type', 'clearance'),
+            msg_code=db_object.get('msg_code', 'UM169'),
+            seq_num=db_object.get('seq_num', 0),
+            ref_seq_num=db_object.get('ref_seq_num'),
             status=db_object.get('status', 'sent')
         )
     
     def to_dict(self):
         return {
             'sender_id': str(self.sender_id),
-            'receiver_id': str(self.receiver_id),
+            'recipient': self.recipient,
             'content': self.content,
-            'message_type': self.message_type,
+            'msg_code': self.msg_code,
+            'seq_num': self.seq_num,
+            'ref_seq_num': self.ref_seq_num,
             'status': self.status,
-            'created_at': self.created_at
+            'timestamp': self.timestamp
         }

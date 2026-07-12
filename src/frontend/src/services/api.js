@@ -18,11 +18,11 @@ export const authService = {
         return data;
     },
 
-    async register(username, email, password, role) {
+    async register(username, email, password, role, mode_s_address = '', facility_designator = '') {
         const response = await fetch(`${BASE_URL}/auth/register`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ username, email, password, role })
+            body: JSON.stringify({ username, email, password, role, mode_s_address, facility_designator })
         });
         const data = await response.json();
         if (!response.ok) throw new Error(data.error);
@@ -48,7 +48,7 @@ export const authService = {
 
 // Message service
 export const messageService = {
-    async sendMessage(receiverId, content, messageType = 'clearance') {
+    async sendMessage(recipient, content, msgCode = 'UM169', refSeqNum = null) {
         const token = authService.getToken();
         const response = await fetch(`${BASE_URL}/messages/send`, {
             method: 'POST',
@@ -56,7 +56,7 @@ export const messageService = {
                 'Content-Type': 'application/json',
                 'Authorization': `Bearer ${token}`
             },
-            body: JSON.stringify({ recipient: receiverId, content, message_type: messageType })
+            body: JSON.stringify({ recipient, content, msg_code: msgCode, ref_seq_num: refSeqNum })
         });
         const data = await response.json();
         if (!response.ok) throw new Error(data.error);
@@ -66,6 +66,18 @@ export const messageService = {
     async getHistory() {
         const token = authService.getToken();
         const response = await fetch(`${BASE_URL}/messages/history`, {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        });
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.error);
+        return data;
+    },
+
+    async getUsers() {
+        const token = authService.getToken();
+        const response = await fetch(`${BASE_URL}/messages/users`, {
             headers: {
                 'Authorization': `Bearer ${token}`
             }

@@ -33,13 +33,21 @@
                 <label for="role">Mission Role</label>
                 <select id="role" class="form-control">
                     <option value="pilot">Pilot</option>
-                    <option value="atc">Air Traffic Controller</option>
+                    <option value="controller">Air Traffic Controller</option>
                 </select>
+            </div>
+            <div class="form-group" id="mode-s-group">
+                <label for="mode_s_address">Mode S Hex Address (Optional)</label>
+                <input type="text" id="mode_s_address" class="form-control" placeholder="e.g. C0A1F2">
+            </div>
+            <div class="form-group" id="facility-group" style="display: none;">
+                <label for="facility_designator">ATC Facility Designator</label>
+                <input type="text" id="facility_designator" class="form-control" placeholder="e.g. EGTT">
             </div>
             <button type="submit" class="btn-auth" id="register-btn">REGISTER</button>
         </form>
         <div class="auth-footer">
-            Already have an account? <a href="login.html">Login here</a>
+            Already have an account? <a href="login.html" id="login-link">Login here</a>
         </div>
     </div>
     <script src="register.bundle.js"></script>

@@ -1,0 +1,22 @@
+(index):18 Refused to apply style from 'http://localhost:8081/styles/themes.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+(index):18 Refused to apply style from 'http://localhost:8081/styles/navigation.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+VM504 index.js:485 [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled.
+VM497 log.js:39 [HMR] Waiting for update signal from WDS...
+main.bundle.js:118 [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled.
+main.bundle.js:281 [HMR] Waiting for update signal from WDS...
+VM526 api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
+VM525 Airspace.js:11 Uncaught TypeError: Cannot set properties of null (setting 'innerHTML')
+    at initializeAirspace (VM525 Airspace.js:11:29)
+    at initializeApp (VM521 index.js:29:122)
+    at HTMLDocument.eval (VM521 index.js:24:3)
+initializeAirspace @ VM525 Airspace.js:11
+initializeApp @ VM521 index.js:29
+eval @ VM521 index.js:24
+api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc3MDAyNTIxNSwianRpIjoiOTZhYTQ5ZjMtZGZiNS00ZTk1LTgyMTQtM2VlYjU5YmU0MGY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc3MDAyNTIxNSwiZXhwIjoxNzcwMDI2MTE1fQ.ejfIj8G11tuTZNxUy0tSvMd24YLNIFuNymAbWFlTSQw
+Airspace.js:11 Uncaught TypeError: Cannot set properties of null (setting 'innerHTML')
+    at initializeAirspace (Airspace.js:11:29)
+    at initializeApp (index.js:29:122)
+    at HTMLDocument.eval (index.js:24:3)
+initializeAirspace @ Airspace.js:11
+initializeApp @ index.js:29
+eval @ index.js:24

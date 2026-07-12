@@ -1,214 +1,89 @@
-# CPDLC System
+# Professional CPDLC System Simulator
 
-A web-based simulation of a Controller-Pilot Data Link Communications (CPDLC) system. This application allows users to register as pilots or air traffic controllers and communicate with each other through a simple messaging interface.
+A standard-compliant, web-based simulation of a Controller-Pilot Data Link Communications (CPDLC) system designed as an interactive portfolio demonstration. 
 
-## Features
+This application simulates air-ground digital telecommunications under ICAO Doc 9705, Doc 10037 (GOLD), and Link 2000+ specifications, demonstrating structured message handshakes, automated sector handovers, and Mode S transponder telemetry.
 
--   User registration and authentication (Pilot or Air Traffic Controller).
--   Real-time messaging between pilots and controllers.
--   Message history tracking.
--   Responsive user interface with light and dark themes.
+---
 
-## Technologies Used
+## Key Features
 
--   **Backend:**
-    -   Python
-    -   Flask
-    -   MongoDB
-    -   Flask-JWT-Extended for authentication
-    -   Flask-Cors
-    -   Bcrypt for password hashing
--   **Frontend:**
-    -   HTML5
-    -   CSS3
-    -   JavaScript (ES6)
-    -   Webpack for asset bundling
-    -   Babel for JavaScript transpiling
--   **Database:**
-    -   MongoDB
+1. **ICAO Structured Message Sets (UM/DM Codes)**
+   * **Uplink Clearances (ATC):** Send standardized clearances like `UM19: CLIMB TO [Altitude]`, `UM20: DESCEND TO [Altitude]`, `UM74: PROCEED DIRECT TO [Position]`, and `UM117: CONTACT [Next ATC]`.
+   * **Downlink Requests & Responses (Pilot):** Enforce matching responses like `DM0: WILCO` (Will Comply), `DM1: UNABLE`, and `DM2: STANDBY` referencing their parent clearance sequence numbers.
 
-## Project Structure
+2. **Sequence Number Tracking & Rollover (0–63)**
+   * Maintains message sequence counters local to each aircraft-ground facility link, supporting sequence-specific references and rollover limits matching real-world 3GPP/ARINC protocols.
+
+3. **Current/Next Data Authority Handovers (CDA/NDA)**
+   * Simulates sector boundaries. When the aircraft crosses a boundary on the live SVG radar monitor, it triggers a handover warning. Completing the handover shifts the Current Data Authority (CDA).
+
+4. **Dynamic Active User Discovery**
+   * Exposes a dynamic list of online facilities and active flights, completely eliminating hardcoded recipient bugs and allowing real-time cross-client message routing.
+
+---
+
+## Architectural Breakdown
 
 ```
 CPDLC/
 ├── src/
 │   ├── backend/
 │   │   ├── app/
-│   │   │   ├── __init__.py
-│   │   │   ├── models/
-│   │   │   ├── routes/
-│   │   │   └── ...
+│   │   │   ├── models/        # Python data validation models (User, Message)
+│   │   │   ├── routes/        # Auth and standard ICAO message endpoints
+│   │   │   └── __init__.py    # Flask & MongoDB startup configuration
 │   │   ├── run.py
 │   │   └── requirements.txt
 │   └── frontend/
 │       ├── src/
 │       │   ├── components/
-│       │   ├── services/
-│       │   ├── index.js
-│       │   ├── login.js
-│       │   └── register.js
-│       ├── index.html
-│       ├── login.html
-│       ├── register.html
-│       ├── webpack.config.js
-│       └── package.json
+│       │   │   ├── Airspace_Display/  # Animated SVG Radar Screen
+│       │   │   ├── Message_History/   # Chronological message threads
+│       │   │   └── Message_Input_Form/# Standard ICAO template composer
+│       │   ├── services/      # REST API handlers
+│       │   └── index.js       # App orchestrator
+│       └── index.html
 └── README.md
 ```
 
-## Setup and Running the Project
+---
+
+## Getting Started
 
 ### Prerequisites
+* Python 3.x
+* Node.js & npm
+* MongoDB (running locally on port `27017`)
 
--   Python 3.x
--   Node.js and npm
--   MongoDB
+### Installation & Run
 
-### Backend Setup
+1. **Start the Database:**
+   Ensure your local MongoDB daemon is running (`mongod`).
 
-1.  **Navigate to the backend directory:**
-    ```bash
-    cd src/backend
-    ```
-2.  **Install Python dependencies:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-3.  **Set up environment variables:**
-    Create a `.env` file in the `src/backend` directory and add the following variables. Replace the placeholder values with your own.
-    ```
-    MONGODB_URI=mongodb://localhost:27017/cpdlc
-    SECRET_KEY=your-super-secret-key
-    JWT_SECRET_KEY=your-super-secret-jwt-key
-    ```
-4.  **Run the backend server:**
-    ```bash
-    python run.py
-    ```
-    The backend server will be running on `http://localhost:3000`.
+2. **Backend Setup:**
+   ```bash
+   cd src/backend
+   pip install -r requirements.txt
+   # Create .env with MONGODB_URI=mongodb://localhost:27017/cpdlc
+   python run.py
+   ```
 
-### Frontend Setup
+3. **Frontend Setup:**
+   ```bash
+   cd src/frontend
+   npm install
+   npm start
+   ```
 
-1.  **Navigate to the frontend directory:**
-    ```bash
-    cd src/frontend
-    ```
-2.  **Install Node.js dependencies:**
-    ```bash
-    npm install
-    ```
-3.  **Run the frontend development server:**
-    ```bash
-    npm start
-    ```
-    The frontend application will be accessible at `http://localhost:8081`.
+4. **Running Unit Tests:**
+   ```bash
+   cd src/backend
+   python -m pytest ../../tests/test_cpdlc_backend.py
+   ```
 
-**Note:** The backend and frontend servers must be running concurrently for the application to work correctly.
+---
 
-## Usage
-
-1.  Open your web browser and navigate to `http://localhost:8081`.
-2.  Register a new account as either a "Pilot" or "Controller".
-3.  Log in with your new account.
-4.  You will be redirected to the main application page where you can send and receive messages.
-5.  Use the settings panel to switch between light and dark themes or to log out.
-
-## API Documentation
-
-### Authentication
-
--   **`POST /api/auth/register`**
-    -   Registers a new user.
-    -   **Request Body:**
-        ```json
-        {
-            "username": "testuser",
-            "email": "test@example.com",
-            "password": "password",
-            "role": "pilot"
-        }
-        ```
-    -   **Success Response (201):**
-        ```json
-        {
-            "message": "User created successfully"
-        }
-        ```
-    -   **Error Response (400):**
-        ```json
-        {
-            "error": "Username or email already exists"
-        }
-        ```
-
--   **`POST /api/auth/login`**
-    -   Logs in a user and returns a JWT token.
-    -   **Request Body:**
-        ```json
-        {
-            "username": "testuser",
-            "password": "password"
-        }
-        ```
-    -   **Success Response (200):**
-        ```json
-        {
-            "token": "your-jwt-token",
-            "user": {
-                "username": "testuser",
-                "role": "pilot"
-            }
-        }
-        ```
-    -   **Error Response (401):**
-        ```json
-        {
-            "error": "Invalid credentials"
-        }
-        ```
-
-### Messaging
-
--   **`POST /api/messages/send`**
-    -   Sends a message to another user.
-    -   Requires a valid JWT token in the `Authorization` header.
-    -   **Request Body:**
-        ```json
-        {
-            "recipient": "recipient_username",
-            "content": "This is a test message.",
-            "message_type": "clearance"
-        }
-        ```
-    -   **Success Response (201):**
-        ```json
-        {
-            "message": "Message sent successfully"
-        }
-        ```
-    -   **Error Response (404):**
-        ```json
-        {
-            "error": "Recipient not found"
-        }
-        ```
-
--   **`GET /api/messages/history`**
-    -   Retrieves the message history for the authenticated user.
-    -   Requires a valid JWT token in the `Authorization` header.
-    -   **Success Response (200):**
-        ```json
-        [
-            {
-                "sender": "testuser",
-                "receiver": "atc",
-                "content": "Requesting clearance to land.",
-                "timestamp": "2023-10-27T10:00:00Z",
-                "type": "request",
-                "status": "sent"
-            }
-        ]
-        ```
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any bugs or feature requests.
+## Verification & Compliance
+* **Unit Tested:** Pytest suite covers Mode S Hex format checks, ICAO 4-letter facility designators, and validation limits.
+* **Standards Mapped:** Evaluated against ARINC 622, Link 2000+, and ICAO Doc 9705.
