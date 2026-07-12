@@ -50,17 +50,19 @@ function applyTheme(theme) {
 }
 
 function setupNavigation() {
-    const navLinks = document.querySelectorAll('#sidebar .nav-link');
+    const navLinks = document.querySelectorAll('.sidebar-nav-link');
     const sections = document.querySelectorAll('main section');
 
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             e.preventDefault();
 
-            navLinks.forEach(link => link.classList.remove('active'));
-            e.target.classList.add('active');
+            const targetLink = e.currentTarget;
 
-            const targetId = e.target.getAttribute('href').substring(1);
+            navLinks.forEach(l => l.classList.remove('active'));
+            targetLink.classList.add('active');
+
+            const targetId = targetLink.getAttribute('href').substring(1);
             sections.forEach(section => {
                 if (section.id === targetId) {
                     section.classList.add('active-section');
