@@ -1,48 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --glass-bg: rgba(15, 23, 42, 0.45);
+    --glass-border: rgba(16, 185, 129, 0.2);
+    --neon-green: #10b981;
+    --neon-amber: #f59e0b;
+    --neon-blue: #0ea5e9;
+    --terminal-font: 'Share Tech Mono', monospace;
+    --ui-font: 'Outfit', sans-serif;
+}
+
 body {
-    background: radial-gradient(circle at top left, #1e293b, #0f172a);
-    color: #f8fafc;
-    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at center, #111827 0%, #030712 100%);
+    color: #e2e8f0;
+    font-family: var(--ui-font);
+    min-height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    margin: 0;
+    overflow-x: hidden;
+    position: relative;
 }
 
-.auth-card {
-    background: rgba(30, 41, 59, 0.7);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 24px;
-    padding: 3rem;
-    width: 100%;
-    max-width: 420px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+/* Radar grid overlay background */
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(16, 185, 129, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(16, 185, 129, 0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    background-position: center;
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Radar Sweep Line Animation */
+.radar-sweep {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 50%, rgba(16, 185, 129, 0.07) 100%);
+    pointer-events: none;
+    z-index: 0;
+    animation: sweep 8s linear infinite;
+    transform-origin: bottom;
+}
+
+@keyframes sweep {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+}
+
+.cockpit-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 90%;
+    max-width: 920px;
+    z-index: 10;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .cockpit-container {
+        grid-template-columns: 1.1fr 1fr;
+    }
+}
+
+/* Telemetry Screen Panel */
+.telemetry-panel {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(16px);
+    border-radius: 20px;
+    padding: 2rem;
+    font-family: var(--terminal-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(16, 185, 129, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.telemetry-panel::before {
+    content: 'ATC DATALINK LINK-16 / CPDLC v2.4';
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 10px;
+    color: rgba(16, 185, 129, 0.4);
+    letter-spacing: 1px;
+}
+
+.telemetry-header {
+    border-bottom: 1px dashed rgba(16, 185, 129, 0.3);
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.telemetry-title {
+    color: var(--neon-green);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.telemetry-title::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: var(--neon-green);
+    border-radius: 50%;
+    box-shadow: 0 0 8px var(--neon-green);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+}
+
+.telemetry-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    margin-bottom: 0.75rem;
+    color: rgba(226, 232, 240, 0.85);
+}
+
+.telemetry-label {
+    color: rgba(16, 185, 129, 0.75);
+    text-transform: uppercase;
+}
+
+.telemetry-value {
+    color: #fff;
+    text-align: right;
+}
+
+.telemetry-value.success {
+    color: var(--neon-green);
+    text-shadow: 0 0 6px rgba(16, 185, 129, 0.4);
+}
+
+.telemetry-value.warning {
+    color: var(--neon-amber);
+    text-shadow: 0 0 6px rgba(245, 158, 11, 0.4);
+}
+
+/* Avionics Compass Box */
+.compass-box {
+    border: 1px solid rgba(16, 185, 129, 0.15);
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.compass-dial {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border: 1px dashed rgba(16, 185, 129, 0.4);
+    border-radius: 50%;
+    animation: spin 30s linear infinite;
+}
+
+.compass-dial::after {
+    content: 'N';
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 9px;
+    color: var(--neon-green);
+    font-weight: bold;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.compass-readout {
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+/* Auth Card Panel */
+.auth-panel {
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(16px);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(16, 185, 129, 0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
 }
 
 .auth-header {
-    text-align: center;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .auth-header h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
-    background: linear-gradient(135deg, #3b82f6, #6366f1);
-    background-clip: text;
+    margin: 0 0 0.5rem 0;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #fff 0%, rgba(16, 185, 129, 0.8) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .auth-header p {
     color: #94a3b8;
-    font-size: 0.9rem;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+/* Creative Role Selector Switch */
+.role-toggle-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 4px;
+    border-radius: 12px;
+    border: 1px solid rgba(16, 185, 129, 0.15);
+    margin-bottom: 1.75rem;
+    position: relative;
+}
+
+.role-tab {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    color: #94a3b8;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.role-tab.active {
+    color: #fff;
+    background: rgba(16, 185, 129, 0.2);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.15);
 }
 
 .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
+    position: relative;
 }
 
 .form-group label {
@@ -50,72 +275,148 @@ body {
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: #94a3b8;
+    color: rgba(16, 185, 129, 0.75);
     margin-bottom: 0.5rem;
     letter-spacing: 0.05em;
+    font-family: var(--terminal-font);
 }
 
 .form-control {
     width: 100%;
-    background: rgba(15, 23, 42, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: 0.8rem 1rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
     color: white;
-    transition: all 0.3s ease;
+    font-family: var(--terminal-font);
+    font-size: 0.95rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
 }
 
 .form-control:focus {
     outline: none;
-    border-color: #3b82f6;
-    background: rgba(15, 23, 42, 0.8);
-    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+    border-color: var(--neon-green);
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 12px rgba(16, 185, 129, 0.25);
 }
 
-.btn-auth {
-    width: 100%;
-    background: linear-gradient(135deg, #3b82f6, #6366f1);
-    color: white;
-    border: none;
-    padding: 1rem;
-    border-radius: 12px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin-top: 1rem;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+/* Custom indicator light on inputs */
+.input-indicator {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(16, 185, 129, 0.2);
+    transition: background 0.3s ease;
 }
 
-.btn-auth:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
-    filter: brightness(1.1);
-}
-
-.auth-footer {
-    text-align: center;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    color: #94a3b8;
-}
-
-.auth-footer a {
-    color: #3b82f6;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.auth-footer a:hover {
-    text-decoration: underline;
+.form-control:focus ~ .input-indicator {
+    background: var(--neon-green);
+    box-shadow: 0 0 8px var(--neon-green);
 }
 
 .error-msg {
     background: rgba(239, 68, 68, 0.1);
-    border: 1px solid rgba(239, 68, 68, 0.2);
+    border: 1px solid rgba(239, 68, 68, 0.3);
     color: #f87171;
-    padding: 0.8rem;
-    border-radius: 12px;
-    font-size: 0.85rem;
-    margin-bottom: 1.5rem;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-family: var(--terminal-font);
+    margin-bottom: 1.25rem;
     display: none;
+    animation: flash 0.4s ease;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.btn-auth {
+    width: 100%;
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.8) 0%, rgba(16, 185, 129, 1) 100%);
+    color: #030712;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 10px;
+    font-family: var(--terminal-font);
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+    box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+    text-transform: uppercase;
+}
+
+.btn-auth:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0 25px rgba(16, 185, 129, 0.4);
+    filter: brightness(1.15);
+}
+
+.btn-auth:active {
+    transform: translateY(1px);
+}
+
+.auth-footer {
+    text-align: center;
+    margin-top: 1.75rem;
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.auth-footer a {
+    color: var(--neon-green);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.auth-footer a:hover {
+    color: #fff;
+    text-shadow: 0 0 8px rgba(16, 185, 129, 0.5);
+    text-decoration: underline;
+}
+
+/* Boot Sequence Loader HUD */
+.boot-hud {
+    position: absolute;
+    inset: 0;
+    background: rgba(3, 7, 18, 0.95);
+    z-index: 100;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: var(--terminal-font);
+    color: var(--neon-green);
+}
+
+.boot-lines {
+    width: 100%;
+    max-width: 320px;
+    height: 120px;
+    overflow-y: auto;
+    font-size: 11px;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px dashed rgba(16, 185, 129, 0.2);
+    padding-bottom: 0.5rem;
+}
+
+.boot-spinner {
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgba(16, 185, 129, 0.2);
+    border-top: 2px solid var(--neon-green);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
 }

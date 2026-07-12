@@ -1,137 +1,77 @@
-Refused to apply style from '<URL>' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
-Refused to apply style from '<URL>' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
-Refused to apply style from '<URL>' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
-Refused to apply style from '<URL>' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
-Refused to apply style from '<URL>' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
-index.js:485 [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled.
-log.js:39 [HMR] Waiting for update signal from WDS...
-index.js:485 [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled.
-log.js:39 [HMR] Waiting for update signal from WDS...
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
-CPDLC_Chat.js:60 Failed to load chat messages: Error: User not found
-    at eval (api.js:194:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ CPDLC_Chat.js:60
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
-CPDLC_Chat.js:60 Failed to load chat messages: Error: User not found
-    at eval (api.js:194:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ CPDLC_Chat.js:60
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
-message_History.js:59 Failed to load message history: Error: User not found
-    at eval (api.js:194:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ message_History.js:59
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
-message_History.js:59 Failed to load message history: Error: User not found
-    at eval (api.js:194:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ message_History.js:59
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
-CPDLC_Chat.js:60 Failed to load chat messages: Error: User not found
-    at eval (api.js:194:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ CPDLC_Chat.js:60
-:3000/api/messages/history:1  Failed to load resource: the server responded with a status of 404 (NOT FOUND)
-message_History.js:59 Failed to load message history: Error: User not found
-    at eval (api.js:194:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ message_History.js:59
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
-api.js:103 Token retrieved: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTc4Mzg5Njg2NSwianRpIjoiNDVmOTc0NTktZDJmNi00NGRkLTlhYWYtNDg4YjU1M2Q1M2JlIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IjY5ODA3MGZlOTY1MDBmZjE5MDFlMWMyYyIsIm5iZiI6MTc4Mzg5Njg2NSwiZXhwIjoxNzgzODk3NzY1fQ.At2h-mde2MdESyufQy3o_xkorvPuMBeVMUqyRIv0pLk
-api.js:171  GET http://localhost:3000/api/messages/history 404 (NOT FOUND)
-eval @ api.js:171
+login.html:1 Refused to apply style from 'http://localhost:8081/styles/auth.css' because its MIME type ('text/html') is not a supported stylesheet MIME type, and strict MIME checking is enabled.
+VM1788 index.js:485 [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled.
+VM1781 log.js:39 [HMR] Waiting for update signal from WDS...
+login.bundle.js:96 [webpack-dev-server] Server started: Hot Module Replacement enabled, Live Reloading enabled, Progress disabled, Overlay enabled.
+login.bundle.js:259 [HMR] Waiting for update signal from WDS...
+VM1805 login.js:24 Attempting to log in with: {username: 'pilot'}
+login.js:24 Attempting to log in with: {username: 'pilot'}
+VM1806 api.js:22  POST http://localhost:3000/api/auth/login 401 (UNAUTHORIZED)
+eval @ VM1806 api.js:22
+eval @ VM1806 api.js:6
+eval @ VM1806 api.js:7
+asyncGeneratorStep @ VM1806 api.js:8
+_next @ VM1806 api.js:9
+eval @ VM1806 api.js:9
+eval @ VM1806 api.js:9
+login @ VM1806 api.js:54
+eval @ VM1805 login.js:29
+eval @ VM1805 login.js:3
+eval @ VM1805 login.js:4
+asyncGeneratorStep @ VM1805 login.js:5
+_next @ VM1805 login.js:6
+eval @ VM1805 login.js:6
+eval @ VM1805 login.js:6
+eval @ VM1805 login.js:50
+VM1806 api.js:38 Login response: {status: 401, data: {…}}
+VM1805 login.js:37 Login failed: Error: Invalid credentials
+    at eval (VM1806 api.js:46:19)
+    at Generator.eval (VM1806 api.js:6:1660)
+    at Generator.eval [as next] (VM1806 api.js:7:255)
+    at asyncGeneratorStep (VM1806 api.js:8:70)
+    at _next (VM1806 api.js:9:163)
+eval @ VM1805 login.js:37
+eval @ VM1805 login.js:3
+eval @ VM1805 login.js:4
+asyncGeneratorStep @ VM1805 login.js:5
+_throw @ VM1805 login.js:6
+Promise.then
+asyncGeneratorStep @ VM1805 login.js:5
+_next @ VM1805 login.js:6
+eval @ VM1805 login.js:6
+eval @ VM1805 login.js:6
+eval @ VM1805 login.js:50
+api.js:22  POST http://localhost:3000/api/auth/login 401 (UNAUTHORIZED)
+eval @ api.js:22
 eval @ api.js:6
 eval @ api.js:7
 asyncGeneratorStep @ api.js:8
 _next @ api.js:9
 eval @ api.js:9
 eval @ api.js:9
-getHistory @ api.js:199
-eval @ CPDLC_Chat.js:40
-eval @ CPDLC_Chat.js:6
-eval @ CPDLC_Chat.js:7
-asyncGeneratorStep @ CPDLC_Chat.js:8
-_next @ CPDLC_Chat.js:9
-eval @ CPDLC_Chat.js:9
-eval @ CPDLC_Chat.js:9
-loadChatMessages @ CPDLC_Chat.js:23
-CPDLC_Chat.js:60 Failed to load chat messages: Error: User not found
-    at eval (api.js:194:19)
+login @ api.js:54
+eval @ login.js:29
+eval @ login.js:3
+eval @ login.js:4
+asyncGeneratorStep @ login.js:5
+_next @ login.js:6
+eval @ login.js:6
+eval @ login.js:6
+eval @ login.js:50
+api.js:38 Login response: {status: 401, data: {…}}
+login.js:37 Login failed: Error: Invalid credentials
+    at eval (api.js:46:19)
     at Generator.eval (api.js:6:1660)
     at Generator.eval [as next] (api.js:7:255)
     at asyncGeneratorStep (api.js:8:70)
     at _next (api.js:9:163)
-eval @ CPDLC_Chat.js:60
-eval @ CPDLC_Chat.js:6
-eval @ CPDLC_Chat.js:7
-asyncGeneratorStep @ CPDLC_Chat.js:8
-_throw @ CPDLC_Chat.js:9
+eval @ login.js:37
+eval @ login.js:3
+eval @ login.js:4
+asyncGeneratorStep @ login.js:5
+_throw @ login.js:6
 Promise.then
-asyncGeneratorStep @ CPDLC_Chat.js:8
-_next @ CPDLC_Chat.js:9
-eval @ CPDLC_Chat.js:9
-eval @ CPDLC_Chat.js:9
-loadChatMessages @ CPDLC_Chat.js:23
-api.js:171  GET http://localhost:3000/api/messages/history 404 (NOT FOUND)
-eval @ api.js:171
-eval @ api.js:6
-eval @ api.js:7
-asyncGeneratorStep @ api.js:8
-_next @ api.js:9
-eval @ api.js:9
-eval @ api.js:9
-getHistory @ api.js:199
-eval @ message_History.js:37
-eval @ message_History.js:6
-eval @ message_History.js:7
-asyncGeneratorStep @ message_History.js:8
-_next @ message_History.js:9
-eval @ message_History.js:9
-eval @ message_History.js:9
-loadMessageHistory @ message_History.js:20
-message_History.js:59 Failed to load message history: Error: User not found
-    at eval (api.js:194:19)
-    at Generator.eval (api.js:6:1660)
-    at Generator.eval [as next] (api.js:7:255)
-    at asyncGeneratorStep (api.js:8:70)
-    at _next (api.js:9:163)
-eval @ message_History.js:59
-eval @ message_History.js:6
-eval @ message_History.js:7
-asyncGeneratorStep @ message_History.js:8
-_throw @ message_History.js:9
-Promise.then
-asyncGeneratorStep @ message_History.js:8
-_next @ message_History.js:9
-eval @ message_History.js:9
-eval @ message_History.js:9
-loadMessageHistory @ message_History.js:20
+asyncGeneratorStep @ login.js:5
+_next @ login.js:6
+eval @ login.js:6
+eval @ login.js:6
+eval @ login.js:50

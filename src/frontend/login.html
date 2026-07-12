@@ -4,34 +4,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPDLC | Login</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/auth.css">
+    <title>CPDLC Avionics Gateway</title>
 </head>
 
 <body>
-    <div class="auth-card">
-        <div class="auth-header">
-            <h1>CPDLC</h1>
-            <p>Enter your credentials to access mission control</p>
+    <div class="radar-sweep"></div>
+    
+    <div class="cockpit-container">
+        <!-- Avionics Left Telemetry Display Panel -->
+        <div class="telemetry-panel">
+            <div class="telemetry-header">
+                <h2 class="telemetry-title">System Status</h2>
+            </div>
+            
+            <div style="flex-grow: 1;">
+                <div class="telemetry-row">
+                    <span class="telemetry-label">D-LINK Network</span>
+                    <span class="telemetry-value success">LINK-16 ACTIVE</span>
+                </div>
+                <div class="telemetry-row">
+                    <span class="telemetry-label">Host Node</span>
+                    <span class="telemetry-value">CPDLC-FLASK-SRV</span>
+                </div>
+                <div class="telemetry-row">
+                    <span class="telemetry-label">Database Sync</span>
+                    <span class="telemetry-value success">CONNECTED (MONGODB)</span>
+                </div>
+                <div class="telemetry-row">
+                    <span class="telemetry-label">XPNDR Mode</span>
+                    <span class="telemetry-value warning">STANDBY</span>
+                </div>
+                <div class="telemetry-row">
+                    <span class="telemetry-label">Next Data Auth</span>
+                    <span class="telemetry-value">KZWY (NY CENTER)</span>
+                </div>
+            </div>
+
+            <!-- Compass Rose Dial -->
+            <div class="compass-box">
+                <div class="compass-dial"></div>
+                <div class="compass-readout">
+                    <div style="color: var(--neon-green); font-weight: bold;">HDG: 345°</div>
+                    <div>ALT: FL330</div>
+                    <div>SPD: M0.82</div>
+                </div>
+            </div>
+
+            <div style="font-size: 10px; color: rgba(16, 185, 129, 0.5); text-align: center; border-top: 1px dashed rgba(16, 185, 129, 0.2); padding-top: 8px;">
+                SECURE RADAR DATA LINK GATEWAY • RESTRICTED ACCESS
+            </div>
         </div>
-        <div class="error-msg" id="error-message"></div>
-        <form id="login-form">
-            <div class="form-group">
-                <label for="username">Username / Callsign</label>
-                <input type="text" id="username" class="form-control" autocomplete="username" required>
+
+        <!-- Authorization Form Panel -->
+        <div class="auth-panel">
+            <!-- Simulated Loading Terminal -->
+            <div class="boot-hud" id="boot-hud">
+                <div class="boot-lines" id="boot-lines"></div>
+                <div class="boot-spinner"></div>
             </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" class="form-control" autocomplete="current-password" required>
+
+            <div class="auth-header">
+                <h1>CPDLC Gateway</h1>
+                <p>Initialize D-Link session authorization credentials</p>
             </div>
-            <button type="submit" class="btn-auth" id="login-btn">LOG IN</button>
-        </form>
-        <div class="auth-footer">
-            Don't have an account? <a href="register.html">Register here</a>
+            
+            <div class="error-msg" id="error-message"></div>
+            
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">IDENTIFIER / CALLSIGN</label>
+                    <input type="text" id="username" class="form-control" placeholder="E.g., BAW123 or EGTT" autocomplete="username" required>
+                    <div class="input-indicator"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">ACCESS CODE</label>
+                    <input type="password" id="password" class="form-control" placeholder="••••••••" autocomplete="current-password" required>
+                    <div class="input-indicator"></div>
+                </div>
+                <button type="submit" class="btn-auth" id="login-btn">ESTABLISH CONNECTION</button>
+            </form>
+            
+            <div class="auth-footer">
+                Need to initialize a transponder? <a href="register.html">REGISTER UNIT</a>
+            </div>
         </div>
     </div>
-    <script src="login.bundle.js"></script>
 </body>
 
 </html>

@@ -4,53 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CPDLC | Registration</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/auth.css">
+    <title>CPDLC Avionics Registration</title>
 </head>
 
 <body>
-    <div class="auth-card">
-        <div class="auth-header">
-            <h1>CPDLC</h1>
-            <p>Create your account for mission control</p>
+    <div class="radar-sweep"></div>
+    
+    <div class="cockpit-container">
+        <!-- Avionics Left Telemetry Display Panel -->
+        <div class="telemetry-panel">
+            <div class="telemetry-header">
+                <h2 class="telemetry-title">System Status</h2>
+            </div>
+            
+            <div style="flex-grow: 1;">
+                <div class="telemetry-row">
+                    <span class="telemetry-label">D-LINK Network</span>
+                    <span class="telemetry-value success">LINK-16 ACTIVE</span>
+                </div>
+                <div class="telemetry-row">
+                    <span class="telemetry-label">Host Node</span>
+                    <span class="telemetry-value">CPDLC-FLASK-SRV</span>
+                </div>
+                <div class="telemetry-row">
+                    <span class="telemetry-label">Database Sync</span>
+                    <span class="telemetry-value success">CONNECTED (MONGODB)</span>
+                </div>
+                <div class="telemetry-row">
+                    <span class="telemetry-label">XPNDR Mode</span>
+                    <span class="telemetry-value warning">STANDBY</span>
+                </div>
+                <div class="telemetry-row">
+                    <span class="telemetry-label">Next Data Auth</span>
+                    <span class="telemetry-value">KZWY (NY CENTER)</span>
+                </div>
+            </div>
+
+            <!-- Compass Rose Dial -->
+            <div class="compass-box">
+                <div class="compass-dial"></div>
+                <div class="compass-readout">
+                    <div style="color: var(--neon-green); font-weight: bold;">HDG: 345°</div>
+                    <div>ALT: FL330</div>
+                    <div>SPD: M0.82</div>
+                </div>
+            </div>
+
+            <div style="font-size: 10px; color: rgba(16, 185, 129, 0.5); text-align: center; border-top: 1px dashed rgba(16, 185, 129, 0.2); padding-top: 8px;">
+                SECURE RADAR DATA LINK GATEWAY • RESTRICTED ACCESS
+            </div>
         </div>
-        <div class="error-msg" id="error-message"></div>
-        <form id="register-form">
-            <div class="form-group">
-                <label for="username">Username / Callsign</label>
-                <input type="text" id="username" class="form-control" autocomplete="username" required>
+
+        <!-- Authorization Form Panel -->
+        <div class="auth-panel">
+            <!-- Simulated Loading Terminal -->
+            <div class="boot-hud" id="boot-hud">
+                <div class="boot-lines" id="boot-lines"></div>
+                <div class="boot-spinner"></div>
             </div>
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" class="form-control" autocomplete="email" required>
+
+            <div class="auth-header">
+                <h1>CPDLC Registration</h1>
+                <p>Register new unit or ATC facility transponder</p>
             </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" class="form-control" autocomplete="new-password" required>
+            
+            <div class="error-msg" id="error-message"></div>
+            
+            <form id="register-form">
+                <!-- Role Toggle -->
+                <div class="role-toggle-container">
+                    <button type="button" class="role-tab active" id="btn-role-pilot">PILOT</button>
+                    <button type="button" class="role-tab" id="btn-role-controller">CONTROLLER</button>
+                </div>
+                <!-- Hidden input tracking selected role -->
+                <input type="hidden" id="role-value" value="pilot">
+
+                <div class="form-group">
+                    <label for="username">IDENTIFIER / CALLSIGN</label>
+                    <input type="text" id="username" class="form-control" placeholder="E.g., BAW123 or EGTT" autocomplete="username" required>
+                    <div class="input-indicator"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">NETWORK EMAIL</label>
+                    <input type="email" id="email" class="form-control" placeholder="unit@network.com" autocomplete="email" required>
+                    <div class="input-indicator"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">ACCESS CODE</label>
+                    <input type="password" id="password" class="form-control" placeholder="••••••••" autocomplete="new-password" required>
+                    <div class="input-indicator"></div>
+                </div>
+
+                <!-- Pilot specific field -->
+                <div class="form-group" id="mode-s-group">
+                    <label for="mode_s_address">MODE S HEX (24-BIT HEX)</label>
+                    <input type="text" id="mode_s_address" class="form-control" placeholder="E.g., C0A1F2 (Auto if blank)">
+                    <div class="input-indicator"></div>
+                </div>
+
+                <!-- Controller specific field -->
+                <div class="form-group" id="facility-group" style="display: none;">
+                    <label for="facility_designator">ATC FACILITY DESIGNATOR (4-LETTER ICAO)</label>
+                    <input type="text" id="facility_designator" class="form-control" placeholder="E.g., EGTT">
+                    <div class="input-indicator"></div>
+                </div>
+
+                <button type="submit" class="btn-auth" id="register-btn">INITIALIZE UNIT</button>
+            </form>
+            
+            <div class="auth-footer">
+                Already registered? <a href="login.html">ESTABLISH CONNECTION</a>
             </div>
-            <div class="form-group">
-                <label for="role">Mission Role</label>
-                <select id="role" class="form-control">
-                    <option value="pilot">Pilot</option>
-                    <option value="controller">Air Traffic Controller</option>
-                </select>
-            </div>
-            <div class="form-group" id="mode-s-group">
-                <label for="mode_s_address">Mode S Hex Address (Optional)</label>
-                <input type="text" id="mode_s_address" class="form-control" placeholder="e.g. C0A1F2">
-            </div>
-            <div class="form-group" id="facility-group" style="display: none;">
-                <label for="facility_designator">ATC Facility Designator</label>
-                <input type="text" id="facility_designator" class="form-control" placeholder="e.g. EGTT">
-            </div>
-            <button type="submit" class="btn-auth" id="register-btn">REGISTER</button>
-        </form>
-        <div class="auth-footer">
-            Already have an account? <a href="login.html" id="login-link">Login here</a>
         </div>
     </div>
-    <script src="register.bundle.js"></script>
 </body>
 
 </html>
