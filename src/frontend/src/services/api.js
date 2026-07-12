@@ -59,6 +59,11 @@ export const messageService = {
             body: JSON.stringify({ recipient, content, msg_code: msgCode, ref_seq_num: refSeqNum })
         });
         const data = await response.json();
+        if (response.status === 401) {
+            authService.logout();
+            window.location.href = 'login.html';
+            throw new Error('Session expired');
+        }
         if (!response.ok) throw new Error(data.error);
         return data;
     },
@@ -70,6 +75,11 @@ export const messageService = {
                 'Authorization': `Bearer ${token}`
             }
         });
+        if (response.status === 401) {
+            authService.logout();
+            window.location.href = 'login.html';
+            return [];
+        }
         const data = await response.json();
         if (!response.ok) throw new Error(data.error);
         return data;
@@ -82,6 +92,11 @@ export const messageService = {
                 'Authorization': `Bearer ${token}`
             }
         });
+        if (response.status === 401) {
+            authService.logout();
+            window.location.href = 'login.html';
+            return [];
+        }
         const data = await response.json();
         if (!response.ok) throw new Error(data.error);
         return data;
