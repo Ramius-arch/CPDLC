@@ -2,10 +2,10 @@ import { messageService, authService } from '../../services/api.js';
 import './message_Input.css';
 
 export function initializeMessageInput() {
-    const inputContainer = document.querySelector('.message-input');
+    const inputContainer = document.querySelector('#messages-section .col-lg-5 .card-body');
     const currentUser = authService.getUser();
     
-    if (!currentUser) return;
+    if (!currentUser || !inputContainer) return;
     
     const isController = currentUser.role === 'controller';
     

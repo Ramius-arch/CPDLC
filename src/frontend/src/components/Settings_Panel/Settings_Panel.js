@@ -1,59 +1,34 @@
-import { settingsService, Themes } from '../../services/settings.js';
+import { settingsService } from '../../services/settings.js';
 import { authService } from '../../services/api.js';
 import './Settings_Panel.css';
 
 export function initializeSettings() {
-    const settingsContainer = document.querySelector('.settings-panel');
-    settingsContainer.innerHTML = `
-        <div class="settings">
-            <h2>Settings</h2>
-            <div class="settings-controls">
-                <div class="settings-group">
-                    <label>Theme</label>
-                    <div class="theme-buttons">
-                        <button class="theme-button light" data-theme="light">Light</button>
-                        <button class="theme-button dark" data-theme="dark">Dark</button>
-                        <button class="theme-button sepia" data-theme="sepia">Sepia</button>
-                    </div>
-                </div>
-                <div class="settings-group">
-                    <label>Role</label>
-                    <select id="role">
-                        <option value="pilot">Pilot</option>
-                        <option value="controller">Controller</option>
-                    </select>
-                </div>
-                <div class="settings-group">
-                    <button id="logout">Logout</button>
-                </div>
-            </div>
-        </div>
-    `;
+    const themeSelect = document.getElementById('theme-select');
+    if (themeSelect) {
+        themeSelect.value = settingsService.getTheme() || 'dark';
+    }
 
-    // Setup theme buttons
-    const themeButtons = settingsContainer.querySelectorAll('.theme-button');
-    themeButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const theme = button.dataset.theme;
-            settingsService.setTheme(theme);
-            updateThemeButtons();
-        });
-    });
-
-    // Setup logout button
-    const logoutButton = settingsContainer.querySelector('#logout');
-    logoutButton.addEventListener('click', () => {
-        authService.logout();
-        window.location.reload();
-    });
-
-    // Update initial theme button states
-    updateThemeButtons();
-
-    function updateThemeButtons() {
-        const currentTheme = settingsService.getTheme();
-        themeButtons.forEach(button => {
-            button.style.opacity = button.dataset.theme === currentTheme ? '1' : '0.6';
-        });
+    const user = authService.getUser();
+    if (user) {
+        const displayEl = document.getElementById('user-display');
+        if (displayEl) {
+            const detail = user.role === 'pilot' 
+                ? `Mode S: ${user.mode_s_address || 'N/A'}` 
+                : `Facility: ${user.facility_designator || 'N/A'}`;
+            displayEl.innerHTML = `
+                <div class="fw-bold text-truncate text-zinc-100" style="color: #f4f4f5;">${user.username.toUpperCase()}</div>
+                <div class="text-secondary smaller" style="font-size: 10px; margin-bottom: 4px;">${detail}</div>
+                <a href="#" id="sidebar-logout" style="color: #ef4444; font-size: 10px; text-decoration: none;">LOG OUT</a>
+            `;
+            
+            const logoutLink = document.getElementById('sidebar-logout');
+            if (logoutLink) {
+                logoutLink.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    authService.logout();
+                    window.location.reload();
+                });
+            }
+        }
     }
 }

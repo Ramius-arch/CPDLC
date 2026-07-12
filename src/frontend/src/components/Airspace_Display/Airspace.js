@@ -1,10 +1,10 @@
 import { authService, messageService } from '../../services/api';
 
 export function initializeAirspace() {
-    const airspaceDisplay = document.querySelector('.airspace-display');
+    const airspaceDisplay = document.getElementById('map');
     const currentUser = authService.getUser();
     
-    if (!currentUser) return;
+    if (!currentUser || !airspaceDisplay) return;
     
     airspaceDisplay.innerHTML = `
         <div class="airspace glass-card p-6 rounded-xl border border-zinc-800 bg-zinc-900 bg-opacity-70">
