@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initializeApp() {
     const theme = settingsService.getTheme();
-    applyTheme(theme);
+    settingsService.applyTheme(theme);
 
     const airspaceDisplayInstance = initializeAirspace();
     initializeChat();
@@ -37,16 +37,7 @@ function initializeApp() {
     themeSelect.addEventListener('change', (e) => {
         const newTheme = e.target.value;
         settingsService.setTheme(newTheme);
-        applyTheme(newTheme);
     });
-}
-
-function applyTheme(theme) {
-    if (theme === 'dark') {
-        document.documentElement.setAttribute('data-bs-theme', 'dark');
-    } else {
-        document.documentElement.removeAttribute('data-bs-theme');
-    }
 }
 
 function setupNavigation() {

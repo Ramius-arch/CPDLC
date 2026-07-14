@@ -1,26 +1,115 @@
-body {
+:root, body.light-theme {
     --bg-color: #ffffff;
-    --text-color: #000000;
-    --header-bg: #f0f0f0;
-    --border-color: #ddd;
-    
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: all 0.3s ease;
+    --text-color: #1e293b;
+    --header-bg: #f1f5f9;
+    --border-color: #e2e8f0;
+    --surface-color: #ffffff;
+    --secondary-color: #f1f5f9;
+    --primary-color: #0ea5e9;
+    --bg-glass: rgba(255, 255, 255, 0.7);
+    --border-glass: rgba(226, 232, 240, 0.8);
+    --text-primary: #0f172a;
+    --text-secondary: #64748b;
+    --primary: #0ea5e9;
+    --transition-standard: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --message-bg: rgba(14, 165, 233, 0.1);
+    --message-hover: rgba(14, 165, 233, 0.15);
+    --message-sent-bg: rgba(14, 165, 233, 0.1);
+    --message-sent-border: rgba(14, 165, 233, 0.3);
+    --message-received-bg: rgba(15, 23, 42, 0.05);
+    --message-received-border: rgba(15, 23, 42, 0.1);
+    --accent-color: #f59e0b;
+    --warning-color: #ef4444;
+    --radar-bg: #f8fafc;
+    --radar-grid: rgba(148, 163, 184, 0.2);
+    --radar-axis: rgba(148, 163, 184, 0.3);
 }
 
-body.dark-theme {
-    --bg-color: #1a1a1a;
-    --text-color: #ffffff;
-    --header-bg: #2d2d2d;
-    --border-color: #444;
+[data-bs-theme="dark"], body.dark-theme {
+    --bg-color: #0b0f19;
+    --text-color: #f1f5f9;
+    --header-bg: #111827;
+    --border-color: #1f2937;
+    --surface-color: #111827;
+    --secondary-color: #1f2937;
+    --primary-color: #10b981;
+    --bg-glass: rgba(17, 24, 39, 0.7);
+    --border-glass: rgba(255, 255, 255, 0.08);
+    --text-primary: #ffffff;
+    --text-secondary: #94a3b8;
+    --primary: #10b981;
+    --transition-standard: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --message-bg: rgba(16, 185, 129, 0.1);
+    --message-hover: rgba(16, 185, 129, 0.15);
+    --message-sent-bg: rgba(16, 185, 129, 0.15);
+    --message-sent-border: rgba(16, 185, 129, 0.3);
+    --message-received-bg: rgba(255, 255, 255, 0.05);
+    --message-received-border: rgba(255, 255, 255, 0.1);
+    --accent-color: #f59e0b;
+    --warning-color: #ef4444;
+    --radar-bg: #05070a;
+    --radar-grid: rgba(16, 185, 129, 0.15);
+    --radar-axis: rgba(16, 185, 129, 0.25);
 }
 
-body.sepia-theme {
+[data-bs-theme="sepia"], body.sepia-theme {
     --bg-color: #f4ecd8;
     --text-color: #5b4636;
     --header-bg: #e4d5b7;
     --border-color: #bca483;
+    --surface-color: #e4d5b7;
+    --secondary-color: #bca483;
+    --primary-color: #a0522d;
+    --bg-glass: rgba(228, 213, 183, 0.7);
+    --border-glass: rgba(91, 70, 54, 0.15);
+    --text-primary: #4a3728;
+    --text-secondary: #7c6350;
+    --primary: #a0522d;
+    --transition-standard: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --message-bg: rgba(160, 82, 45, 0.1);
+    --message-hover: rgba(160, 82, 45, 0.15);
+    --message-sent-bg: rgba(160, 82, 45, 0.15);
+    --message-sent-border: rgba(160, 82, 45, 0.35);
+    --message-received-bg: rgba(91, 70, 54, 0.05);
+    --message-received-border: rgba(91, 70, 54, 0.1);
+    --accent-color: #d2691e;
+    --warning-color: #b22222;
+    --radar-bg: #ebdcb9;
+    --radar-grid: rgba(91, 70, 54, 0.15);
+    --radar-axis: rgba(91, 70, 54, 0.25);
+}
+
+[data-bs-theme="oceanic"], body.oceanic-theme {
+    --bg-color: #172B36;
+    --text-color: #F1F6F4;
+    --header-bg: #114C5A;
+    --border-color: rgba(217, 232, 226, 0.2);
+    --surface-color: #114C5A;
+    --secondary-color: rgba(217, 232, 226, 0.15);
+    --primary-color: #FFC801;
+    --bg-glass: rgba(17, 43, 54, 0.65);
+    --border-glass: rgba(217, 232, 226, 0.12);
+    --text-primary: #F1F6F4;
+    --text-secondary: #D9E8E2;
+    --primary: #FFC801;
+    --transition-standard: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --message-bg: rgba(255, 200, 1, 0.08);
+    --message-hover: rgba(255, 200, 1, 0.15);
+    --message-sent-bg: rgba(255, 200, 1, 0.12);
+    --message-sent-border: rgba(255, 200, 1, 0.35);
+    --message-received-bg: rgba(217, 232, 226, 0.06);
+    --message-received-border: rgba(217, 232, 226, 0.15);
+    --accent-color: #FF9932;
+    --warning-color: #FF9932;
+    --radar-bg: #0d1e25;
+    --radar-grid: rgba(217, 232, 226, 0.1);
+    --radar-axis: rgba(217, 232, 226, 0.2);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: var(--transition-standard);
 }
 
 .cpdlc-header {
@@ -45,14 +134,70 @@ input, select, textarea {
 }
 
 button {
-    background-color: #007bff;
-    color: white;
+    background-color: var(--primary);
+    color: var(--bg-color);
     border: none;
     padding: 8px 16px;
     border-radius: 4px;
     cursor: pointer;
+    transition: var(--transition-standard);
 }
 
 button:hover {
-    background-color: #0056b3;
+    filter: brightness(1.15);
+}
+
+/* Glassmorphism Card Style Utility */
+.glass-card {
+    background: var(--bg-glass) !important;
+    border: 1px solid var(--border-glass) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 1.5rem;
+    transition: var(--transition-standard);
+    color: var(--text-color) !important;
+}
+
+.glass-card:hover {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Input UI Custom overrides */
+.message-form select,
+.message-form textarea,
+.message-form input {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+    border: 1px solid var(--border-color) !important;
+}
+
+#send-button {
+    background-color: var(--primary) !important;
+    color: var(--bg-color) !important;
+    transition: var(--transition-standard);
+}
+
+#send-button:hover:not(:disabled) {
+    filter: brightness(1.15);
+}
+
+#send-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Custom premium button override */
+.btn-premium {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent-color) 100%) !important;
+    color: #172B36 !important; /* contrast */
+    font-weight: 600;
+    border: none;
+    transition: var(--transition-standard);
+}
+
+.btn-premium:hover {
+    filter: brightness(1.1);
+    box-shadow: 0 0 15px rgba(255, 200, 1, 0.25);
 }

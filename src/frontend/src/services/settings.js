@@ -15,13 +15,9 @@ class SettingsService {
     }
 
     applyTheme(theme) {
-        if (theme === 'dark') {
-            document.documentElement.setAttribute('data-bs-theme', 'dark');
-        } else if (theme === 'sepia') {
-            document.documentElement.setAttribute('data-bs-theme', 'sepia');
-        } else {
-            document.documentElement.removeAttribute('data-bs-theme');
-        }
+        document.documentElement.setAttribute('data-bs-theme', theme);
+        document.body.classList.remove('light-theme', 'dark-theme', 'sepia-theme', 'oceanic-theme');
+        document.body.classList.add(`${theme}-theme`);
     }
 }
 
